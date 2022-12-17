@@ -5,7 +5,22 @@
 
 body{
     margin: 0;
+    /* height: 100%; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+.hero,
+.images,
+.quote,
+.sign-up
+{
+    flex: 1 0 auto;
+}
+
+
+
 
 
 
@@ -26,6 +41,7 @@ body{
     gap: 15px;
     margin: 0 0 90px 0;
     padding: 0;
+    flex-shrink: 0;
 }
 
 .main-text{
@@ -51,6 +67,7 @@ body{
 .main{
     display: flex;    
     justify-content: center;
+    flex-shrink: 0;
 
     /* background-color: #1f2937; */
 }
@@ -126,6 +143,10 @@ a{
     color: rgb(86, 83, 83);
 }
 
+.images{
+    margin-bottom: 50px;
+}
+
 .image{
     height: 150px;
     width: 100%;
@@ -137,6 +158,87 @@ a{
 
 .images p{
     font-size: 36px; 
-    font-weight: 800;
+    font-weight: 1000;
     color: #1f2937;
 }
+
+.quote{
+    height: 400px;    
+    display: flex;
+    background-color: #e5e7eb;
+    justify-content: center;    
+    align-items: center;
+}
+
+.quote-elem{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 820px;
+}
+
+
+.quote-text{
+    font-size: 36px;
+    font-weight: 100;
+    color: #1f2937;
+}
+
+.quote-author{
+    /* align-self: flex-end; */
+    width: fit-content;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.sign-up{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-card{
+    display: flex;
+    background-color: #3882f6;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 100px;
+    border-radius: 8px;
+    
+}
+
+.card-text{
+    margin-right: 50px;
+    border-top: 50px;
+    color: white;
+}
+
+.sign-up-card button{
+    background-color: #3882f6;
+    color: white;
+    padding: 8px 30px;
+    border-color:white;
+    border-radius: 8px;
+    border: 2px solid;
+
+}
+
+.card-text div strong{
+    font-size: 18px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1f2937 ;
+    color: white;
+    padding: 30px 50px;
+    margin-top:auto;
+
+}
+
+
